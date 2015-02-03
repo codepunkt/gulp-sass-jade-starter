@@ -1,0 +1,15 @@
+doctype html
+html(lang='de')
+	head
+		meta(charset='utf-8')
+		title App
+		link(rel='stylesheet', href=url('css/app.css'))
+		script.
+			window.url = (function () {
+				var maps = #{maps};
+				return function (url) {
+					return maps[url] || url;
+				};
+			})();
+	body
+		script(src=url('js/app.js'))
