@@ -5,11 +5,7 @@ html(lang='de')
 		title App
 		link(rel='stylesheet', href=url('css/app.css'))
 		script.
-			window.url = (function () {
-				var maps = #{maps};
-				return function (url) {
-					return maps[url] || url;
-				};
-			})();
+			var maps = #{maps};
+			window.url = #{url};
 	body
 		script(src=url('js/app.js'))
