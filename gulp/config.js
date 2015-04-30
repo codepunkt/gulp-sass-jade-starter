@@ -36,8 +36,7 @@ module.exports = {
 	},
 
 	sass: {
-		sourcemap: true,
-		style: 'compressed'
+		indentedSyntax: true
 	},
 
 	lint: {
